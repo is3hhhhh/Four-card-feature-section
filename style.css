@@ -60,6 +60,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    border-radius: 6px;
+    box-shadow: 0 10px 9px #d8dfe7;
 }
 .features .super {
     border-top: #56c1c2 solid 5px;
@@ -72,4 +74,20 @@ img {
 }
 .features .calc {
     border-top: solid 5px #4f93cc;
+}
+@media (max-width: 767px) {
+    .features {
+        flex-direction: column;
+        margin-top: 360px;
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .text {
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .text p {
+        width: 317px;
+        margin-left: 125px;
+    }
 }
